@@ -9,7 +9,12 @@ const channels = require("./channels.json");
  ****************************************************************/
 function totalVideosDuration(channel) {
   // Your code here
+  // channel.fi((video) =>);
+  // return durationArray;
+  return channel.videos.find((video) => video["title"]);
+  // return console.log(channel.videos.title);
 }
+console.log(totalVideosDuration(channels[0]));
 
 /**************************************************************
  * channelWithMostContent(channels):
